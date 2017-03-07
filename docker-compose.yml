@@ -1,0 +1,10 @@
+version: '2'
+services:
+  anchor:
+    build: .
+    environment:
+      - DOMAIN=${DOMAIN}
+      - NAME=${NAME}
+      - DO_KEY=${DO_KEY}
+    restart: 'always'
+  
